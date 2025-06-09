@@ -1,8 +1,4 @@
-MACHINE LEARNING LABORATORY                                                            
-BCSL606 
-4. For a given set of training data examples stored in a .CSV file, implement and 
-demonstrate the Find-S algorithm to output a description of the set of all 
-hypotheses consistent with the training examples. 
+
 import numpy as np 
 import pandas as pd 
 data=pd.read_csv('finds1.csv') 
@@ -24,5 +20,3 @@ return specific_h
 concepts=np.array(data.iloc[:,0:-1]) 
 target=np.array(data.iloc[:,-1]) 
 print(train(concepts,target)) 
-DEPT OF CSE, ATMECE 
-Page 28 
